@@ -14,3 +14,16 @@ Utilities: [utilities-218.md](utilities-218.md)
 
 Architecture: [dev216.md](dev216.md)
 
+## Line endings
+
+Before editing files in the repository, you should set this configuration:
+
+~~~bash
+git config set --local core.autocrlf false
+~~~
+
+If you use Jujutsu VCS, set this one too:
+
+~~~bash
+jj config set --repo working-copy.eol-conversion "none"
+~~~

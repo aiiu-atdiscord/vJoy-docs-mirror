@@ -10,7 +10,7 @@ The installation packages currently shipped (x86/x64) are constructed of several
 
 ### Inno Set-up Wrapper:
 
-This executable includes all the files needed for installation of vJoy device driver on both (x86/x64) environments. When executed the relevant files are extracted to a folder, a vJoy entry that includes an un-installer, is added to the system menu and vJoyInstall is called to perform the installation. This file created by [inno Setup](https://jrsoftware.org/isinfo.php) from a script that is part of the code database (look for file _vJoyInstallerSigned.iss_).
+This executable includes all the files needed for installation of vJoy device driver on both (x86/x64) environments. When executed the relevant files are extracted to a folder, a vJoy entry that includes an un-installer, is added to the system menu and vJoyInstall is called to perform the installation. This file created by [inno Setup](https://jrsoftware.org/isinfo.php) 🔗 from a script that is part of the code database (look for file _vJoyInstallerSigned.iss_).
 
 ### vJoy Driver Files
 

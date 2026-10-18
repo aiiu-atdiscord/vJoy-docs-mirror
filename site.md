@@ -18,7 +18,7 @@ This site will guide you through the [Download](download-a-install.md), [Develop
 
 1. **Deployment** includes instructions how and what to download. How to install vJoy and description of the organization of the download site.
 2. **Development** Includes understanding the architecture of vJoy, acquainting with various parts project and the organization of the source code.
-3. **Support** is currently given using the [Forum](https://vjoy.freeforums.net/). In cases you need to call the author for other matter, please use the Contact Form.
+3. **Support** is currently given using the [Forum](https://vjoy.freeforums.net/) 🔗. In cases you need to call the author for other matter, please use the Contact Form.
 
 ## Which vJoy?
 

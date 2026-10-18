@@ -31,7 +31,7 @@ The vJoy API is fully implemented as a single C-language dynamic library (dll) t
 
 ## Feeder SDK
 
-The [Feeder SDK](https://sourceforge.net/projects/vjoystick/files/Beta%202.x/2.1.9.1-160719/SDK.zip/download "Feeder SDK for vJoy version 2.x") is contains a C/C++ section and a C# section.
+The [Feeder SDK](https://sourceforge.net/projects/vjoystick/files/Beta%202.x/2.1.9.1-160719/SDK.zip/download "Feeder SDK for vJoy version 2.x") 🔗 is contains a C/C++ section and a C# section.
 
 ### C/C++
 

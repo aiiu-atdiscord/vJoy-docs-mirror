@@ -2,8 +2,8 @@
 
 https://web.archive.org/web/20180323161505/http://vjoystick.sourceforge.net/site/index.php/download-a-install/download
 
-vJoy device driver can be installed on Windows Vista (SP1), Windows 7, 8, 8.1 and 10
-Both x86 and x64 architectures are supported.
+vJoy device driver can be installed on Windows Vista (SP1), Windows 7, 8, 8.1 and 10\
+Both x86 and x64 architectures are supported.\
 It is <ins>not</ins> supported on Itanium architecture.
 
 ![vJoy Installer (32-bit/64-bit)](green_down_arrow_with_text.png)

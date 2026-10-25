@@ -4,12 +4,12 @@
 
 The vJoy Installer has a set of default features.
 
-You can override these default features
+You can override these default features:
 
-- Through the installer's command line.
-- By introducing file **vJoyInit.reg** to the installer's folder.
+- through the installer's command line.
+- by introducing file **vJoyInit.reg** to the installer's folder.
 
-Let's assume the installer is **vJoySetup.exe** (It is named differently for every release).
+Let's assume the installer is **vJoySetup.exe** (it is named differently for every release).
 
 ## Selective Installation
 
@@ -32,15 +32,15 @@ The above command will not install any of the utilities
 
 ## Customized Installation
 
-The default vJoy installation will configure your system with one vJoy device (#1) that is equipped with all eight axes , eight buttons, none of the POVs and all FFB effects.
+The default vJoy installation will configure your system with one vJoy device (#1) that is equipped with all eight axes, eight buttons, none of the POVs and all FFB effects.
 
-In addition, the initial positions of all control is set to default values.
+In addition to that, the initial positions of all controls are set to default values.
 
 While you can configure your vJoy devices after the installation (add devices, change control availability, add/remove FFB effects) using [vJoyConf](vjoyconf.md) (or [vJoyConfig](vjoyconfig.md)), you cannot change the default control values after installation.
 
 You can also run **vJoyConfig** in a batch file immediatly after the installation of vJoy.
 
-customizing the installation is done by placing a registry file (.reg) in the installer folder. The installer will by default read file **vJoyInit.reg** if exists. If you prefer naming your reg file to some other file name (e.g. myInit.reg) you need to use the following command line systax:
+Customizing the installation is done by placing a registry file (.reg) in the installer folder. The installer will by default read file **vJoyInit.reg** if it exists. If you prefer naming your reg file to some other file name (e.g. myInit.reg) you need to use the following command line syntax:
 
 `vJoySetup -initreg myInit.reg`
 

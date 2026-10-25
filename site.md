@@ -4,11 +4,11 @@
 
 ## Overview
 
-vJoy is a <ins>device driver</ins> that bridges the gap between any device that is **not** a joystick and an application that requires a joystick. If you develop an application for windows that requires user physical input you should consider incorporating vJoy into your product.
+vJoy is a <ins>device driver</ins> that bridges the gap between any device that is **not** a joystick and an application that requires a joystick. If you develop an application for Windows that requires user physical input you should consider incorporating vJoy into your product.
 
 vJoy can be incorporated as-is or modified. vJoy can be used with fixed configuration or configurable. It also comes with tools and example code that feeds it with data and configure the virtual joystick.
 
-vJoy is implemented as a joystick virtual-device driver for windows (XP and up) that does not represent an actual hardware device.
+vJoy is implemented as a joystick virtual-device driver for Windows (XP and up) that does not represent an actual hardware device.
 
 The vJoy device is seen by Windows as a standard joystick device. However, it receives its signals through a simple software interface. Coders can take advantage of this interface by modifying the provided sample code.
 
@@ -16,15 +16,15 @@ The vJoy device is seen by Windows as a standard joystick device. However, it re
 
 This site will guide you through the [Download](download-a-install.md), [Development](dev216.md) and support of vJoy.
 
-1. **Deployment** includes instructions how and what to download. How to install vJoy and description of the organization of the download site.
-2. **Development** Includes understanding the architecture of vJoy, acquainting with various parts project and the organization of the source code.
-3. **Support** is currently given using the [Forum](https://vjoy.freeforums.net/) 🔗. In cases you need to call the author for other matter, please use the Contact Form.
+1. **Download** includes instructions on how and what to download, how to install vJoy, and a description of the organization of the download site.
+2. **Development** includes: understanding the architecture of vJoy, acquainting yourself with the various parts of the project and the organization of the source code.
+3. **Support** is currently given using the [Forum](https://vjoy.freeforums.net/) 🔗. In cases you need to call the author for other matters, please use the Contact Form.
 
 ## Which vJoy?
 
 You can choose to use one of the off-the-shelf versions of vJoy, request a modification or modify vJoy yourself. It depends on your needs and your development skills. Taking the right decision is the first step in incorporating vJoy in your product.
 
-There are a few flavours of vJoy that you can use.
+There are a few flavors of vJoy that you can use.
 
 ### Current branch
 
@@ -43,4 +43,4 @@ A comprehensive discussion is found under section [Architecture](vjoy-version-10
 - SmartPropoPlus: Controls flight simulators from your R/C transmitter.
 - Mobimotion: Play your favourite Windows games using your mobile device.
 - WeeWheel: You can play games by only moving your phone!
-- steel-batallion-64: A Windows 7 64 bit "driver" for the Steel Batallion Controller
+- steel-batallion-64: A Windows 7 64-bit "driver" for the Steel Batallion Controller.

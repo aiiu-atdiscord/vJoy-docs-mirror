@@ -1,6 +1,6 @@
 # vJoyFeeder
 
-https://web.archive.org/web/20180327133240/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyfeeder
+<small>Original archived at: https://web.archive.org/web/20180327133240/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyfeeder</small>
 
 vJoyFeeder demonstrates the capabilities of vJoy and the usage of the API.
 
@@ -12,9 +12,9 @@ Use it to test vJoy Installation or while writing your own Feeder.
 
 Select a Target Device - vJoyFeeder will acquire this device (if free).
 
-**Axes**: 
+**Axes**:
 
-- Only the sliders for the axes that were configured are active. 
+- Only the sliders for the axes that were configured are active.
 - For a given axis, slide up and down to change axis position.
 
 **Buttons**:

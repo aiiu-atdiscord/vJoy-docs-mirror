@@ -1,6 +1,6 @@
 # vJoy
 
-https://web.archive.org/web/20180313235110/http://vjoystick.sourceforge.net/site/
+<small>Original archived at: https://web.archive.org/web/20180313235110/http://vjoystick.sourceforge.net/site/</small>
 
 ## Overview
 
@@ -44,4 +44,3 @@ A comprehensive discussion is found under section [Architecture](vjoy-version-10
 - Mobimotion: Play your favourite Windows games using your mobile device.
 - WeeWheel: You can play games by only moving your phone!
 - steel-batallion-64: A Windows 7 64 bit "driver" for the Steel Batallion Controller
-

@@ -1,6 +1,6 @@
 # vJoyConf
 
-https://web.archive.org/web/20180226075826/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconf
+<small>Original archived at: https://web.archive.org/web/20180226075826/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconf</small>
 
 vJoyConf enables you to:
 
@@ -32,7 +32,7 @@ You can **delete** an existing device selecting a tab (green background) and pre
 
 ### Enable/Disable vJoy
 
-It is sometimes useful to temporarily remove all vJoy devices then restore the original vJoy configuration. This is done by disabling and enabling vJoy driver. Use checkbox "Enable vJoy". 
+It is sometimes useful to temporarily remove all vJoy devices then restore the original vJoy configuration. This is done by disabling and enabling vJoy driver. Use checkbox "Enable vJoy".
 
 ### Reset All
 
@@ -47,7 +47,7 @@ Once a device has been created, you may change its configuration. The changes wi
 
 #### Add/Remove buttons
 
-Any number between 0 and 128 may be entered. 
+Any number between 0 and 128 may be entered.
 
 ![](<vJoyConf buttons.jpg>)
 

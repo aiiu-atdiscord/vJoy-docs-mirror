@@ -1,6 +1,6 @@
 # System Architecture
 
-https://web.archive.org/web/20180222135551/http://vjoystick.sourceforge.net/site/index.php/dev216/system-architecture
+<small>Original archived at: https://web.archive.org/web/20180222135551/http://vjoystick.sourceforge.net/site/index.php/dev216/system-architecture</small>
 
 ## Standard versus Virtual Joystick
 

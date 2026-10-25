@@ -1,6 +1,6 @@
 # Installer
 
-https://web.archive.org/web/20180224082424/http://vjoystick.sourceforge.net/site/index.php/dev216/installer
+<small>Original archived at: https://web.archive.org/web/20180224082424/http://vjoystick.sourceforge.net/site/index.php/dev216/installer</small>
 
 ## Description of supplied installer
 

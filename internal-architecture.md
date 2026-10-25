@@ -1,6 +1,6 @@
 # Internal Architecture
 
-https://web.archive.org/web/20180212163436/http://vjoystick.sourceforge.net/site/index.php/dev216/internal-architecture
+<small>Original archived at: https://web.archive.org/web/20180212163436/http://vjoystick.sourceforge.net/site/index.php/dev216/internal-architecture</small>
 
 ## Overview
 

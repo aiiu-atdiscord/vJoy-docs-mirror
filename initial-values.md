@@ -1,6 +1,6 @@
 # Initial Values
 
-https://web.archive.org/web/20180118155900/http://vjoystick.sourceforge.net/site/index.php/download-a-install/deployment216/86-deployment-216-1/126-initial-values
+<small>Original archived at: https://web.archive.org/web/20180118155900/http://vjoystick.sourceforge.net/site/index.php/download-a-install/deployment216/86-deployment-216-1/126-initial-values</small>
 
 ## What are Initial Values
 
@@ -58,12 +58,12 @@ Now we add vJoy **Device #2** which has 8 axes and 4 POV Hats. The initial value
 - POV3 = 90° (From master values)
 - POV4 = Neutral (Default value, not overridden)
 
-Now we add vJoy **Device #3** which has 8 axes and 4 POV Hats The initial values of it controls will be: 
+Now we add vJoy **Device #3** which has 8 axes and 4 POV Hats The initial values of it controls will be:
 
 - Axis X = 50% (Default value, not overridden)
 - Axis Y = 50% (Default value, not overridden)
 - Axis Z = 30% (From device #3 initialization values) ⬅️
-- Axis RX = 25% (From master values) 
+- Axis RX = 25% (From master values)
 - Axis RY = 50% (From master values)
 - Axis RZ = 60% (From device #3 initialization values) ⬅️
 - Axis SL1 = 0% (Default value, not overridden)
@@ -79,7 +79,7 @@ All new entries are under registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControl
 
 Let’s call it `%vJoyParm%`
 
- 
+
 
 The initialization key for device **nn** (01 to 16) is `%vJoyParm%\Devicenn\Init`
 

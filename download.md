@@ -1,6 +1,6 @@
 # Download
 
-https://web.archive.org/web/20180323161505/http://vjoystick.sourceforge.net/site/index.php/download-a-install/download
+<small>Original archived at: https://web.archive.org/web/20180323161505/http://vjoystick.sourceforge.net/site/index.php/download-a-install/download</small>
 
 vJoy device driver can be installed on Windows Vista (SP1), Windows 7, 8, 8.1 and 10\
 Both x86 and x64 architectures are supported.\
@@ -25,4 +25,3 @@ _Text link 🔗:_ https://sourceforge.net/projects/vjoystick/files/latest/downlo
 | vJoy 0.x | Installer & vJoyDemo application:<ul><li>Fixed (8 Axes, 32 Buttons) version of vJoy.<li>Compatible with PPJoy.<li>Used with SmartPropoPlus.</ul> |
 | vJoy 1.x | Installer & Applications:<ul><li>Configurable (Up to 8 Axes, 32 Buttons, 1 POV Hat Switch) version of vJoy.<li>Compatible with PPJoy.<li>Compatible with vJoy 0.x</ul> |
 | [All Downloads](https://sourceforge.net/projects/vjoystick/files/Beta/ "vJoy 0.x/1.x files") 🔗 | All files related to vJoy version 0.x/1.x - Download at your own risk |
-

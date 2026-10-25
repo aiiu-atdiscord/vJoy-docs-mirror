@@ -1,6 +1,6 @@
 # Monitor
 
-https://web.archive.org/web/20180308183652/http://vjoystick.sourceforge.net/site/index.php/utilities-218/monitor
+<small>Original archived at: https://web.archive.org/web/20180308183652/http://vjoystick.sourceforge.net/site/index.php/utilities-218/monitor</small>
 
 This utility reads the position data of the selected vJoy Device.
 

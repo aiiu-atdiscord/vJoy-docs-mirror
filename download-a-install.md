@@ -1,6 +1,6 @@
 # Download & Install
 
-https://web.archive.org/web/20180322213745/http://vjoystick.sourceforge.net/site/index.php/download-a-install
+<small>Original archived at: https://web.archive.org/web/20180322213745/http://vjoystick.sourceforge.net/site/index.php/download-a-install</small>
 
 | | |
 | --- | --- |

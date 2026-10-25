@@ -1,6 +1,6 @@
 # vJoyConfig
 
-https://web.archive.org/web/20180226075826/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconfig
+<small>Original archived at: https://web.archive.org/web/20180226075826/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconfig</small>
 
 vJoyConfig is a command-line configuration utility.
 
@@ -32,7 +32,7 @@ Unfriendly syntax.
 
 This section will guide you through the most useful operations. For full syntax go to this [page](vjoyconfig-syntax.md).
 
-Open a command window (DOS Window) as **administrator** use vJoyConfig. 
+Open a command window (DOS Window) as **administrator** use vJoyConfig.
 
 ### Getting Information
 
@@ -83,7 +83,7 @@ The output will be a human-readable list of all controls that has been configure
 
 ```
 C:\Program Files\vJoy\x64>vJoyConfig -t  1 3
- 
+
 ========================================================================
 Device:                 1
 State:                  BUSY
@@ -93,7 +93,7 @@ Continous POVs:         0
 Axes:                   X - Z Rx Ry - - -
 FFB Effects:            All Effects
 ========================================================================
- 
+
 ========================================================================
 Device:                 3
 State:                  FREE
@@ -151,7 +151,7 @@ This command adds device #2 (if does not already exist) with the default control
 ```
 C:\Program Files\vJoy\x64>vJoyConfig 2
 C:\Program Files\vJoy\x64>vJoyConfig -t 2
- 
+
 ========================================================================
 Device:                 2
 State:                  FREE
@@ -188,7 +188,7 @@ _Example 5_
 
 In the above example we forced (`-f`) replacement of an existing device #2 and we overridden the axis default (X Y Z Rx) and the button default to 32 buttons.
 
- 
+
 
 It is also possible to add FFB effects to the device.\
 You can either activate all effects or a subset of the effect list.\
@@ -310,10 +310,10 @@ The most effective way to do it is to log all devices into a batch file:
 A .BAT will be:
 
 ```batch
-vJoyConfig 4 -f -a X Y Z Rx     -b 32 
-vJoyConfig 5 -f -a X Y Z Rx     -b 32 
-vJoyConfig 8 -f -a X Y Z Rx     -b 32 
-vJoyConfig 9 -f -a X Y Z Rx     -b 32 
+vJoyConfig 4 -f -a X Y Z Rx     -b 32
+vJoyConfig 5 -f -a X Y Z Rx     -b 32
+vJoyConfig 8 -f -a X Y Z Rx     -b 32
+vJoyConfig 9 -f -a X Y Z Rx     -b 32
 ```
 
 These are the state of the current system. You may edit this output as you wish. Then you can run the modified batch file on your target machine.
@@ -326,9 +326,9 @@ To duplicate you need first to reset the the configuration on the target machine
 
 ```batch
 vjoyconfig   -r
-vJoyConfig 4 -f -l -a X Y Z Rx     -b 32 
-vJoyConfig 5 -f -l -a X Y Z Rx     -b 32 
-vJoyConfig 8 -f -l -a X Y Z Rx     -b 32 
+vJoyConfig 4 -f -l -a X Y Z Rx     -b 32
+vJoyConfig 5 -f -l -a X Y Z Rx     -b 32
+vJoyConfig 8 -f -l -a X Y Z Rx     -b 32
 vJoyConfig 9 -f    -a X Y Z Rx     -b 32
 ```
 
@@ -337,8 +337,8 @@ vJoyConfig 9 -f    -a X Y Z Rx     -b 32
 If you do not use `vJoyConfig -r` you will modify or add only the devices explicitly accessed:
 
 ```batch
-vJoyConfig 4 -f -l -a X Y Z Rx     -b 32 
-vJoyConfig 5 -f -l -a X Y Z Rx     -b 32 
-vJoyConfig 8 -f -l -a X Y Z Rx     -b 32 
+vJoyConfig 4 -f -l -a X Y Z Rx     -b 32
+vJoyConfig 5 -f -l -a X Y Z Rx     -b 32
+vJoyConfig 8 -f -l -a X Y Z Rx     -b 32
 vJoyConfig 9 -f    -a X Y Z Rx     -b 32
 ```

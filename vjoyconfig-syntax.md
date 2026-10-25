@@ -1,6 +1,6 @@
 # vJoyConfig Syntax
 
-https://web.archive.org/web/20180310075705/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconfig/88-uncategorized/130-vjoyconfig-syntax
+<small>Original archived at: https://web.archive.org/web/20180310075705/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconfig/88-uncategorized/130-vjoyconfig-syntax</small>
 
 ### `vJoyConfig`
 
@@ -54,7 +54,7 @@ Create or replace a joystick device
 - `Dn` – The index of the target joystick device in the range of 1-16
 - `-f` – Force creation even if device exists. This will delete the current device before creating a new one.
 - `-l` – Defer creation of device until the next operation that enables the driver. See Notes.
-- `-a Ai` – Define axes (one or more). 
+- `-a Ai` – Define axes (one or more).
     - Possible values are (Case insensitive): `x`, `y`, `z`, `rx`, `ry`, `rz`, `sl0`, `sl1`
     - In the absence of this flag the default will be used (Default = all axes)
 - `-b n` – Set the number of buttons (Possible values are 0 to 128; Default = 8 buttons)

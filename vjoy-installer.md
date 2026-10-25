@@ -1,6 +1,6 @@
 # vJoy Installer
 
-https://web.archive.org/web/20180331222811/http://vjoystick.sourceforge.net/site/index.php/download-a-install/deployment216/vjoy-installer
+<small>Original archived at: https://web.archive.org/web/20180331222811/http://vjoystick.sourceforge.net/site/index.php/download-a-install/deployment216/vjoy-installer</small>
 
 The vJoy Installer has a set of default features.
 
@@ -22,7 +22,7 @@ By default, vJoy includes a few additional utilities:
 You can select only part of these utilities or none. Here are a few examples:
 
 `vJoySetup /COMPONENTS="Apps\vJoyFeeder,Apps\vJoyConf"`\
-The above command will install only vJoyFeeder and vJoyConf 
+The above command will install only vJoyFeeder and vJoyConf
 
 `vJoySetup /COMPONENTS="Apps\vJoyMon"`\
 The above command will install only vJoyMon

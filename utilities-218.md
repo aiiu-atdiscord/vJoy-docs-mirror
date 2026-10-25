@@ -1,6 +1,6 @@
 # Utilities
 
-https://web.archive.org/web/20180223073440/http://vjoystick.sourceforge.net/site/index.php/utilities-218
+<small>Original archived at: https://web.archive.org/web/20180223073440/http://vjoystick.sourceforge.net/site/index.php/utilities-218</small>
 
 
 vJoy installation include several utilities that are meant to help configuring and testing vJoy devices.

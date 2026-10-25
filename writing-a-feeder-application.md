@@ -1,6 +1,6 @@
 # Writing a feeder application
 
-https://web.archive.org/web/20180223095629/http://vjoystick.sourceforge.net/site/index.php/dev216/writing-a-feeder-application
+<small>Original archived at: https://web.archive.org/web/20180223095629/http://vjoystick.sourceforge.net/site/index.php/dev216/writing-a-feeder-application</small>
 
 ## What is a Feeder
 
@@ -27,7 +27,7 @@ It is recommended that you feeder be able to:
 
 In addition, you may want your feeder to support FFB. If so, you will be required to write a **Receptor** unit inside your feeder. This unit deals with data packets sent to the vJoy device from the application (Usually a computer game). The receptor should deal with these FFB packets. They are usually just passed on to a physical device.
 
-The vJoy API is fully implemented as a single C-language dynamic library (dll) that is a part of the SDK and is also distributed with the vJoy installation. 
+The vJoy API is fully implemented as a single C-language dynamic library (dll) that is a part of the SDK and is also distributed with the vJoy installation.
 
 ## Feeder SDK
 

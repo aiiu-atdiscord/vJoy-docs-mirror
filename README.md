@@ -1,8 +1,10 @@
 # vJoy site backup
 
-Backup of the official vJoy site originally located at `http://vjoystick.sourceforge.net/site/`
+Unofficial backup of the vJoy site originally hosted at `http://vjoystick.sourceforge.net/site/`
 
-I extracted the content from Wayback Machine, specifically from captures dated 2018.
+I extracted the site content from Wayback Machine, specifically from captures dated 2018.
+
+Additional contributions to formatting, and typo fixes, are welcome.
 
 ## Start exploring
 
@@ -14,15 +16,15 @@ Utilities: [utilities-218.md](utilities-218.md)
 
 Architecture: [dev216.md](dev216.md)
 
-## Line endings
+## CRLF line endings (Windows)
 
-Before editing files in the repository, you should set this configuration:
+To preserve the CRLF line endings, you should set this configuration in your local clone of this repo  before making edits:
 
 ~~~bash
 git config set --local core.autocrlf false
 ~~~
 
-If you use Jujutsu VCS, set this one too:
+If you use Jujutsu VCS, set this configuration too:
 
 ~~~bash
 jj config set --repo working-copy.eol-conversion "none"

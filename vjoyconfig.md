@@ -14,25 +14,23 @@ It has all the capabilities that [vJoyConf](vjoyconf.md) has:
     - Select which axes the device supports (Up to 8)
     - Set the number of buttons (Up to 128)
     - Set the number and type of POV Hats (Up to 4)
-    - Select which FFB effects are supported (None to 11)
+    - Select which FFB effects are supported (From none to 11)
 
 ## Advantages
 
-May be ran from batch file
-
-Faster way to configure multiple devices.
+- May be ran from batch file.
+- Faster way to configure multiple devices.
 
 ## Disadvantages
 
-Indication of device status - text mode only.
-
-Unfriendly syntax.
+- Indication of device status - text mode only.
+- Unfriendly syntax.
 
 ## Operations
 
-This section will guide you through the most useful operations. For full syntax go to this [page](vjoyconfig-syntax.md).
+This section will guide you through the most useful operations. For full syntax [go to this page](vjoyconfig-syntax.md).
 
-Open a command window (DOS Window) as **administrator** use vJoyConfig.
+Open a command window (DOS Window) as **administrator** to use vJoyConfig.
 
 ### Getting Information
 
@@ -40,7 +38,7 @@ To learn which devices are already configured:
 
 `vJoyConfig -t`
 
-The output will list the devices and their statuses. The header will list some general information regarding the driver:
+The output will list the devices and their status. The header will list some general information regarding the driver:
 
 ```
 C:\Program Files\vJoy\x64>vJoyConfig -t
@@ -70,8 +68,8 @@ _Example 1_
 
 The above example shows a system where there are two devices:
 
-Device #1 is BUSY - Meaning that it has been acquired by some feeder.\
-Device #3 is FREE - Meaning that it has not been acquired.
+Device #1 is BUSY — meaning that it has been acquired by some feeder.\
+Device #3 is FREE — meaning that it has not been acquired.
 
 ---------------------------------------------------------------------------------------------------
 
@@ -110,8 +108,8 @@ _Example 2_
 
 The above example shows information for devices #1 and #3:
 
-Device #1 is busy, has 2 buttons, no POVs and supports only 4 axes. If addition it supports all FFB effects.\
-Device #3 is free, has 8 buttons, no POVs and supports all 8 axes. It does not supportl FFB effects.
+Device #1 is busy, has 2 buttons, no POVs and supports only 4 axes. Additionally, it supports all FFB effects.\
+Device #3 is free, has 8 buttons, no POVs and supports all 8 axes. It does not support FFB effects.
 
 
 
@@ -134,7 +132,7 @@ _Example 3_
 
 Use vJoyConfig to **add** or **replace** a vJoy device.\
 It is impossible to modify a device (e.g. add a button while maintaining the other controls).\
-Replacing a device is done by removing a device if exists, then adding a device.\
+Replacing a device is done by removing a device (if it exists), then adding a device.\
 When adding a device, you may override all, some or none of the defaults:
 
 - **Axes**: All
@@ -146,7 +144,7 @@ The minimal command to add a device will be:
 
 `vJoyConfig 2`
 
-This command adds device #2 (if does not already exist) with the default controls:
+This command adds device #2 (if it does not already exist) with the default controls:
 
 ```
 C:\Program Files\vJoy\x64>vJoyConfig 2
@@ -186,7 +184,7 @@ FFB Effects:            None
 
 _Example 5_
 
-In the above example we forced (`-f`) replacement of an existing device #2 and we overridden the axis default (X Y Z Rx) and the button default to 32 buttons.
+In the above example we force (`-f`) the replacement of an existing device #2 and we override the axis default (X Y Z Rx) and the button default to 32 buttons.
 
 
 
@@ -214,8 +212,7 @@ _Example 6_
 
 ### Postponing Operation
 
-Every addition or replacement of a vJoy device requires a restart of the vJoy Driver.
-
+Every addition or replacement of a vJoy device requires a restart of the vJoy Driver.\
 This is a lengthy operation.
 
 You may postpone the restart to the last command by adding flag `-l` to all addition operations but the last one:
@@ -285,15 +282,16 @@ Device 16:      Status: MISSING
 _Example 8_
 
 ### Enable/Disable vJoy
-It is sometimes useful to disable vJoy driver and the whole vJoy system altogether. Either if vJoy interfere with other components on your system or in order to speed up the configuration by eliminating unneeded settings.
+
+It is sometimes useful to disable the vJoy driver and the whole vJoy system altogether. Disable vJoy either if vJoy interferes with other components on your system or in order to speed up the configuration by eliminating unneeded settings.
 
 Naturally, you also need to enable the vJoy driver.
 
-To disable vJoy driver:
+To disable the vJoy driver:
 
 `vJoyConfig enable off`
 
-to enable vJoy driver:
+To enable the vJoy driver:
 
 `vJoyConfig enable on`
 
@@ -307,7 +305,7 @@ The most effective way to do it is to log all devices into a batch file:
 
 `vJoyConfig -t -c 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 > A.BAT`
 
-A .BAT will be:
+"A.BAT" will be:
 
 ```batch
 vJoyConfig 4 -f -a X Y Z Rx     -b 32
@@ -316,16 +314,16 @@ vJoyConfig 8 -f -a X Y Z Rx     -b 32
 vJoyConfig 9 -f -a X Y Z Rx     -b 32
 ```
 
-These are the state of the current system. You may edit this output as you wish. Then you can run the modified batch file on your target machine.
+This is the state of the current system. You may edit this output as you wish, then you can run the modified batch file on your target machine.
 
 You may want to **duplicate** your system on the target machine, removing all other devices from the target machine or you may want to **replace** the above devices on the target machine leaving other devices untouched.
 
 ### Duplication
 
-To duplicate you need first to reset the the configuration on the target machine then duplicate the current configuration. For efficiency reasons, diable vJoy before resetting and enable vJoy when done:
+To duplicate, first reset the configuration on the target machine, then add the current configuration. For efficiency reasons, disable vJoy before resetting and enable vJoy when done:
 
 ```batch
-vjoyconfig   -r
+vJoyConfig   -r
 vJoyConfig 4 -f -l -a X Y Z Rx     -b 32
 vJoyConfig 5 -f -l -a X Y Z Rx     -b 32
 vJoyConfig 8 -f -l -a X Y Z Rx     -b 32
@@ -334,7 +332,7 @@ vJoyConfig 9 -f    -a X Y Z Rx     -b 32
 
 ### Replacing
 
-If you do not use `vJoyConfig -r` you will modify or add only the devices explicitly accessed:
+If you do not use `vJoyConfig -r`, you will modify or add only the devices explicitly accessed:
 
 ```batch
 vJoyConfig 4 -f -l -a X Y Z Rx     -b 32

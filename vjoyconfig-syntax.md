@@ -2,65 +2,94 @@
 
 <small>Original archived at: https://web.archive.org/web/20180310075705/http://vjoystick.sourceforge.net/site/index.php/utilities-218/vjoyconfig/88-uncategorized/130-vjoyconfig-syntax</small>
 
-### `vJoyConfig`
+## `vJoyConfig`
 
 Launch GUI
 
-Note: This requires vJoyConfig to be copied into the vJoy directory, and for the system to be configured correctly.
+Without any additional flags, `vJoyConfig` launches the _vJoyConf_ graphical tool.
 
-### `vJoyConfig -h`
+Note: This requires vJoyConfig to be copied into the vJoy directory, and the system to be configured correctly.
 
-Help text
+## `vJoyConfig -h`
 
-### `vJoyConfig -t [[-c] Di...]`
+Print the vJoyConfig help
 
-Report current vJoy Configuration
+## `vJoyConfig -t [[-c] Dn...]`
 
-Without any additional flags - list of vJoy device and their respective statuses.
+Print a report of the current vJoy Configuration
 
-- `-c` – The configuration report is in vJoyConfig command-line format. To be reused in batch file.
-- `Di` – List of devices for which the command will print configuration information.
+Without any additional flags, `vJoyConfig -t` lists all vJoy devices and their respective statuses.
+
+
+###### Arguments:
+
+- `Dn` – One or more devices for which the command will print configuration information.
+
+###### Options:
+
+- `-c` – The configuration report will be in vJoyConfig command-line format, to be reused in a batch file.
 
 Note: <ins>Not</ins> using flag `-c` will result in a human-readable output format.
 
-### `vJoyConfig -v`
 
-Version information
+## `vJoyConfig -v`
 
-### `vJoyConfig -r`
+Display version information
 
-Reset vJoy to default configuration
+## `vJoyConfig -r`
 
-Note: This operation is equivalent to deleting all configurations. vJoy will fall back into its default state which is Device #1 with 8 Axes and 8 Buttons.
+Reset vJoy configuration to its default state
 
-### `vJoyConfig Enable [on | off]`
+Note: This operation is equivalent to deleting all configurations. vJoy will fall back into its default state which is «Device #1 with 8 Axes and 8 Buttons».
 
-Enable or Disable vJoy <ins>driver</ins>. Default is `on`
+## `vJoyConfig Enable [on | off]`
 
-Note: This operation is useful if you need to disable all vJoy devices and then to enable them.
+Enable or disable the vJoy <ins>driver</ins>
 
-### `vJoyConfig -d Dn [Dn+1...]`
+Note: This operation is useful if you need to disable all vJoy devices and then enable them.
 
-Delete one or more devices - devices are in the 1-16 range
+###### Options:
 
-Note 1: This operation may be applied to no-existing devices.
+- `on` – Enables the vJoy driver
+- `off` – Disables the vJoy driver
 
-Note 2: If all devices are removed - the operation is equivalent to `vJoyConfig -r`.
+Default is `on`
 
-### `vJoyConfig Dn [-f][-l][-a Ai [Ai+1 …]] [-bn] {[-pm] | [-sj]} [-e [{all | Ei ...}]]`
+
+## `vJoyConfig -d [Dn]...`
+
+Delete one or more devices
+
+Note 1: This operation can be applied to already deleted devices.
+
+Note 2: If all devices are deleted, this operation does the equivalent to `vJoyConfig -r`.
+
+###### Arguments:
+
+- `Dn` – One or more devices to remove. Devices are in the 1-16 range.
+
+
+## `vJoyConfig Dn [-f] [-l] [-a Ai...] [-b N] [-p M | -s J] [-e Ei...]]`
 
 Create or replace a joystick device
 
+Note 1: This operation never modifies an existing device. It either leaves it unchanged or overwrites its configuration.
+
+###### Arguments:
+
 - `Dn` – The index of the target joystick device in the range of 1-16
+
+###### Options:
+
 - `-f` – Force creation even if device exists. This will delete the current device before creating a new one.
-- `-l` – Defer creation of device until the next operation that enables the driver. See Notes.
+- `-l` – Defer creation of device until the next operation that enables the driver.
 - `-a Ai` – Define axes (one or more).
     - Possible values are (Case insensitive): `x`, `y`, `z`, `rx`, `ry`, `rz`, `sl0`, `sl1`
     - In the absence of this flag the default will be used (Default = all axes)
-- `-b n` – Set the number of buttons (Possible values are 0 to 128; Default = 8 buttons)
-- `-p m` – Set the number of analog POV Switches (Possible values are 0 to 4; Default = 0)
-- `-s j` – Set the number of discrete POV Switches (Possible values are 0 to 4; Default = 0)
-- `-e Ei` – Define the required FFB Effect. Possible Effect Values are (Case Insensitive):
+- `-b N` – Set the number of buttons (Possible values are 0 to 128; Default = 8 buttons)
+- `-p M` – Set the number of analog POV Switches (Possible values are 0 to 4; Default = 0)
+- `-s J` – Set the number of discrete POV Switches (Possible values are 0 to 4; Default = 0)
+- `-e Ei` – Define the required FFB Effect. Possible effect values are (case-insensitive):
 
 | | |
 | --- | --- |
@@ -77,17 +106,16 @@ Create or replace a joystick device
 | `Fric` | Friction |
 | `All` | All above FFB effects |
 
-Note 1: This operation never modifies an existing device. It either leave it unchanged or override its configuration.
 
-Note 2: Use flag `-f` to overwrite an existing device configuration
+Note 2: Use flag `-f` to overwrite an existing device configuration.
 
-Note 3: To create a new device only if absent - do not use flag `-f`
+Note 3: To create a new device only if previously absent, avoid using flag `-f`.
 
-Note 4: A device can include either  **Analog** or  **Discrete** POV switches
+Note 4: A device can include either  **Analog** or  **Discrete** POV switches, meaning that options `-p` and `-s` exclude each other.
 
-Note 5: Omitting flag `-e` will result in a device that does not support FFB
+Note 5: Omitting flag `-e` will result in a device that does not support FFB.
 
-Note6:  `-e all` is equivalent to `-e const ramp sq sine tr stup stdn spr dm inr fric`
+Note 6: `-e all` is equivalent to `-e const ramp sq sine tr stup stdn spr dm inr fric`.
 
 ## How to Deploy
 

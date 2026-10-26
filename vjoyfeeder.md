@@ -4,7 +4,7 @@
 
 vJoyFeeder demonstrates the capabilities of vJoy and the usage of the API.
 
-Use it to test vJoy Installation or while writing your own Feeder.
+Use it to test your vJoy Installation or while writing your own Feeder.
 
 ![](vJoyFeeder.jpg)
 
@@ -28,4 +28,4 @@ Select a Target Device - vJoyFeeder will acquire this device (if free).
 - Select the POV you want to manipulate (There are up to 4)
 - Turn the knob to the correct position.
 - The current POV position (In 1/100 Degree units) will show below.
-- Click the centre to set in/out neutral position.
+- Click the center to set in/out neutral position.

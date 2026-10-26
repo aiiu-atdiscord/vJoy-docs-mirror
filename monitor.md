@@ -6,7 +6,7 @@ This utility reads the position data of the selected vJoy Device.
 
 Use it for testing a vJoy Feeder.
 
-It is better than the inbox **joy.cpl** (Game Controllers) utility:
+It is better than the built-in **joy.cpl** (Game Controllers) utility:
 
 - vJoy Device number is marked
 - Instant response
@@ -18,6 +18,6 @@ It is better than the inbox **joy.cpl** (Game Controllers) utility:
 
 Select a device to monitor.
 
-**Axis** bars will follow the feeder’s movements.\
-Pressed **buttons** will be coloured. Unpressed buttons will be gray.\
+**Axis** bars will follow the feeder's movements.\
+Pressed **buttons** will be colored. Unpressed buttons will be gray.\
 **POV** switches will show their positions. A centered dot will mark neutral position.

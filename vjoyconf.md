@@ -12,7 +12,7 @@ vJoyConf enables you to:
     - Select which axes the device supports (Up to 8)
     - Set the number of buttons (Up to 128)
     - Set the number and type of POV Hats (Up to 4)
-    - Select which FFB effects are supported (None to 11)
+    - Select which FFB effects are supported (From none to 11)
 
 ## Operations
 
@@ -26,17 +26,17 @@ The tab background tells you if the device exists or may be added.
 
 ### Add/Remove Device
 
-You can **add** a new device by selecting a tab (white background) and press button "Add Device". A new device will be created, the tab’s background will become green once the device is ready for use.
+You can **add** a new device by selecting a tab (white background) and press button "Add Device". A new device will be created; the tab’s background will become green once the device is ready for use.
 
-You can **delete** an existing device selecting a tab (green background) and press button "Delete Device". The device will be removed from the system,  the tab’s background will become white once the device is finally removed.
+You can **delete** an existing device selecting a tab (green background) and press button "Delete Device". The device will be removed from the system;  the tab’s background will become white once the device is finally removed.
 
 ### Enable/Disable vJoy
 
-It is sometimes useful to temporarily remove all vJoy devices then restore the original vJoy configuration. This is done by disabling and enabling vJoy driver. Use checkbox "Enable vJoy".
+It is sometimes useful to temporarily remove all vJoy devices then restore the original vJoy configuration. This is done by disabling and enabling the vJoy driver. Use the checkbox "Enable vJoy".
 
 ### Reset All
 
-You can always reset vJoy configuration to its initial state - Device #1 configured to default configuration by pressing button "Reset All".
+You can always reset vJoy configuration to its initial state — Device #1 configured to default configuration — by pressing button "Reset All".
 
 > [!CAUTION]
 > All device configurations will be lost.
@@ -70,8 +70,10 @@ Note: You cannot mix between types.
 
 #### FFB Support
 
-If you want a vJoy device to support FFB effects you have to select checkbox "Enable Effects" and to select the required effects.
+If you want a vJoy device to support FFB effects you have to select the checkbox "Enable Effects" and to select the required effects.
 
-In most cases, support for FFB is not required. However, by selecting an FFB effect to render device #16 unusable (See tab).
+In most cases, support for FFB is not required.
+
+Note that selecting an FFB effect renders device #16 unusable (See tab).
 
 ![](<vJoyConf - FFB.jpg>)
